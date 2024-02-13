@@ -24,3 +24,27 @@ let myObj = {
 const myfunction = function(){
     console.log("Hello");
 }
+
+
+
+// --------------------------------------------------------------
+// stack(Primitive), Heap(Non-Primitive)
+
+let myValue = 'test'
+let myChangedValue = myValue
+myChangedValue = 'test2'  
+
+console.log(myValue);
+console.log(myChangedValue);
+
+let userOne = {
+    email : "userOne@gmail.com",
+    id : '1234'
+}
+
+let userTwo = userOne
+
+userTwo.email = "userTwo@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
