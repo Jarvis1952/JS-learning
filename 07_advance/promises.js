@@ -94,3 +94,12 @@ async function consumePromiseFive(){
     }
 }
 consumePromiseFive()
+
+
+// fetch
+fetch('https://api.github.com/users/jarvis1952')
+.then((response) => {
+    return response.json();
+}).then((data)=>{
+    console.log(data);
+}).catch((error) => console.log(error))
